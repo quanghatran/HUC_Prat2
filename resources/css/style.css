@@ -1,0 +1,830 @@
+.button {
+  padding: 10px 14px;
+  background: #e74c3c;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-family: "Lobster", cursive;
+  border: 1px solid #e74c3c;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  text-shadow: 2px 2px 3px #000;
+}
+
+.button:hover, .buttonSecondary:hover {
+  color: #e74c3c;
+  border: #e74c3c 1px solid;
+  background: transparent;
+}
+
+.buttonOutLine {
+  padding: 10px 14px;
+  background: transparent;
+  color: #e74c3c;
+  text-decoration: none !important;
+  font-family: "Lobster", cursive;
+  border: 1px solid #e74c3c;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin: 50px auto;
+}
+
+.buttonOutLine:hover {
+  color: #fff;
+  background: #e74c3c;
+}
+
+.buttonSecondary {
+  padding: 10px 14px;
+  background: transparent;
+  color: #000;
+  text-decoration: none !important;
+  font-family: "Lobster", cursive;
+  border: 1px solid #000;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  margin: 50px auto;
+}
+
+.btnDelay {
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
+  -webkit-animation-duration: .5s;
+          animation-duration: .5s;
+  border: 1px solid #e46658;
+  border-radius: 5px;
+}
+
+.hrStyle {
+  background-color: #6e6d6d;
+}
+
+.active {
+  color: #e74c3c !important;
+}
+
+.activeMenu {
+  color: #bd3829 !important;
+}
+
+.homeButton {
+  bottom: 20px;
+  right: 20px;
+  font-size: 40px;
+  color: #000;
+}
+
+.homeButton:hover {
+  color: #585858;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2c3e50;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@-webkit-keyframes runDown {
+  0% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+
+@keyframes runDown {
+  0% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+
+#header {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.1)), color-stop(80%, rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.6))), url(../images/59435b9c51693-12036669102050020904398813134497801575965934n.jpg);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 10%, rgba(255, 255, 255, 0.2) 80%, rgba(0, 0, 0, 0.6)), url(../images/59435b9c51693-12036669102050020904398813134497801575965934n.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+#header .headerWrapper {
+  margin: auto;
+  position: relative;
+  height: 100vh;
+}
+
+#header .headerWrapper .topHeader {
+  z-index: 3;
+  color: #fff;
+  height: 80px;
+}
+
+#header .headerWrapper .topHeader .logo {
+  width: 80px;
+  cursor: pointer;
+}
+
+#header .headerWrapper .topHeader .menu .listMenu li {
+  line-height: 80px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+#header .headerWrapper .topHeader .menu .listMenu li a {
+  margin: 15px 25px;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px #000;
+  font-family: "Lobster", cursive;
+  position: relative;
+}
+
+#header .headerWrapper .topHeader .menu .listMenu li a:hover,
+#header .headerWrapper .topHeader .menu .listMenu li a:active {
+  color: #bd3829;
+}
+
+#header .headerWrapper .topHeader .menu .listMenu li a:hover::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #bd3829;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+#header .headerWrapper .topHeader .menu .listMenu li a:active::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #bd3829;
+  top: 110%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+#header .headerWrapper .topHeader .language li {
+  line-height: 80px;
+  width: 35px;
+}
+
+#header .headerWrapper .topHeader .language li a {
+  cursor: pointer;
+}
+
+#header .headerWrapper .topHeader .language li a:hover {
+  color: #9c1607;
+}
+
+#header .headerWrapper .slideShow {
+  height: 40%;
+  top: 250px;
+  z-index: 1;
+  left: 0;
+  font-family: "Lobster", cursive;
+  color: #fff;
+  text-shadow: 2px 2px 3px #000;
+}
+
+#header .headerWrapper .slideShow .firstLine {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+#header .headerWrapper .slideShow .secondLine {
+  margin-bottom: 20px;
+  -webkit-animation-delay: 0.5s;
+          animation-delay: 0.5s;
+  font-size: 30px;
+}
+
+#header .headerWrapper .boxes {
+  color: #fff;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+#header .headerWrapper .boxes .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 250px;
+  height: 100px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  vertical-align: middle;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.2)), color-stop(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2));
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#header .headerWrapper .boxes .box img {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  height: 50px;
+}
+
+#header .headerWrapper .boxes .box .content h3 {
+  font-size: 25px;
+  letter-spacing: 1px;
+  font-family: "Lobster", cursive;
+  margin-bottom: 10px;
+}
+
+#header .headerWrapper .boxes .box .content .viewMore {
+  font-size: 14px;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+#header .headerWrapper .boxes .box .content .viewMore i {
+  font-size: 11px;
+}
+
+#header .headerWrapper .boxes .box .content .viewMore:hover {
+  text-decoration: underline;
+}
+
+#header .headerWrapper .boxes .box:hover {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#header .headerWrapper .boxes .box:hover img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+#header .headerWrapper .down {
+  color: #fff;
+  font-size: 35px;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+  -webkit-animation: runDown 1s infinite;
+          animation: runDown 1s infinite;
+}
+
+#main .mainBox {
+  margin: auto;
+}
+
+#main .mainBox .titleMainBox {
+  font-family: "Lobster", cursive;
+  font-size: 40px;
+  color: #bd3829;
+  margin: 50px auto;
+  position: relative;
+  margin-bottom: 70px;
+}
+
+#main .mainBox .titleMainBox::after {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  background-color: #bd3829;
+  top: 115%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+#main .mainBox .titleMainBox::before {
+  content: "";
+  position: absolute;
+  width: 10%;
+  height: 3px;
+  background-color: #bd3829;
+  top: 135%;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+#main .newsletter .newsletterContent {
+  min-height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#main .newsletter .newsletterContent .leftContent {
+  width: 65%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+}
+
+#main .newsletter .newsletterContent .leftContent .contentImage {
+  width: 100%;
+  height: 70%;
+  height: 390px;
+  background-image: url(../images/diem-trung-tuyen-dai-hoc-van-hoa-ha-noi-thap-nhat-la-15-223552.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#main .newsletter .newsletterContent .leftContent .contentText {
+  margin: 30px auto;
+}
+
+#main .newsletter .newsletterContent .leftContent .contentText .titleText {
+  font-size: 20px;
+  color: #000;
+  text-decoration: none;
+  line-height: 30px;
+}
+
+#main .newsletter .newsletterContent .leftContent .contentText .leftParagraph {
+  font-size: 14px;
+  font-weight: lighter;
+  word-spacing: 1px;
+  line-height: 23px;
+}
+
+#main .newsletter .newsletterContent .leftContent .contentText .titleText:hover {
+  color: #494848;
+}
+
+#main .newsletter .newsletterContent .leftContent .contentText .subText {
+  font-size: 13px;
+  color: #494848;
+  font-weight: lighter;
+  margin-top: 10px;
+  line-height: 23px;
+  margin-bottom: 30px;
+}
+
+#main .newsletter .newsletterContent .leftContent .contentText .subText i {
+  margin-right: 10px;
+}
+
+#main .newsletter .newsletterContent .rightContent {
+  width: 35%;
+  height: 100%;
+}
+
+#main .newsletter .newsletterContent .rightContent .rightContentItem {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-bottom: 25px;
+}
+
+#main .newsletter .newsletterContent .rightContent .rightContentItem .contentImage {
+  width: 50%;
+  margin-right: 20px;
+  background-position: center;
+  background-size: cover;
+}
+
+#main .newsletter .newsletterContent .rightContent .rightContentItem .contentText {
+  width: 50%;
+}
+
+#main .newsletter .newsletterContent .rightContent .rightContentItem .contentText .titleText {
+  font-size: 15px;
+  color: #000;
+  text-decoration: none;
+}
+
+#main .newsletter .newsletterContent .rightContent .rightContentItem .contentText .titleText:hover {
+  color: #494848;
+}
+
+#main .newsletter .newsletterContent .rightContent .rightContentItem .contentText .subText {
+  font-size: 13px;
+  color: #494848;
+  font-weight: lighter;
+  margin-top: 10px;
+  line-height: 23px;
+}
+
+#main .newsletter .newsletterContent .rightContent .rightContentItem .contentText .subText i {
+  margin-right: 10px;
+}
+
+#main .newsletter .newsletterContent .rightContent .item1 .contentImage {
+  background-position: top;
+  background-image: url(../images/ngam-nhin-ve-dep-nu-sinh-dai-hoc-van-hoa-trong-ta-ao-dai2.jpg);
+}
+
+#main .newsletter .newsletterContent .rightContent .item2 .contentImage {
+  background-image: url(../images/vov_123_zidm.jpg);
+}
+
+#main .newsletter .newsletterContent .rightContent .item3 .contentImage {
+  background-image: url(../images/new4.jpg);
+}
+
+#main .newsletter .newsletterContent .rightContent .item4 .contentImage {
+  background-image: url(../images/new3.jpg);
+}
+
+#main .events .eventsContent .listEvent {
+  width: 65%;
+  margin: auto;
+}
+
+#main .events .eventsContent .listEvent ul {
+  margin: 0;
+  padding: 0;
+}
+
+#main .events .eventsContent .listEvent ul li {
+  cursor: pointer;
+}
+
+#main .events .eventsContent .listEvent ul li a {
+  text-decoration: none;
+  font-family: "Lobster", cursive;
+  color: #000;
+  font-size: 20px;
+}
+
+#main .events .eventsContent .listEvent ul li a:hover {
+  color: #e74c3c;
+}
+
+#main .events .eventsContent .boxsEvent {
+  width: 100%;
+}
+
+#main .events .eventsContent .boxsEvent .box {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+#main .events .eventsContent .boxsEvent .box .boxImage {
+  width: 100%;
+  height: 170px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-filter: brightness(95%);
+          filter: brightness(95%);
+  cursor: pointer;
+}
+
+#main .events .eventsContent .boxsEvent .box .boxImage:hover {
+  -webkit-filter: brightness(110%);
+          filter: brightness(110%);
+}
+
+#main .events .eventsContent .boxsEvent .box .boxInfo .boxSub {
+  font-size: 13px;
+  color: #494848;
+}
+
+#main .events .eventsContent .boxsEvent .box .boxInfo .boxTitle h3 {
+  font-size: 18px;
+  font-family: "Lobster", cursive;
+  cursor: pointer;
+}
+
+#main .events .eventsContent .boxsEvent .box .boxInfo .boxTitle h3:hover {
+  color: #656565;
+}
+
+#main .events .eventsContent .boxsEvent .box .boxImage1 {
+  background-image: url(../images/81688010_2643701725744766_3201397502074945536_o.jpg);
+}
+
+#main .events .eventsContent .boxsEvent .box .boxImage2 {
+  background-image: url(../images/73475169_2551826618265611_1184934292455686144_o.jpg);
+}
+
+#main .events .eventsContent .boxsEvent .box .boxImage3 {
+  background-image: url(../images/73206241_2529139677200972_1286322587525185536_o.jpg);
+}
+
+#main .events .eventsContent .boxsEvent .box .boxImage4 {
+  background-image: url(../images/ngam-nhin-ve-dep-nu-sinh-dai-hoc-van-hoa-trong-ta-ao-dai2.jpg);
+  background-position: top;
+}
+
+#main .events .eventsContent .boxsEvent .box .boxImage5 {
+  background-image: url(../images/59435b9c51693-12036669102050020904398813134497801575965934n.jpg);
+}
+
+#main .events .eventsContent .boxsEvent .box .boxImage6 {
+  background-image: url(../images/new4.jpg);
+}
+
+#main .admissions .admissionsContent {
+  text-align: justify;
+  max-height: 400px;
+}
+
+#main .admissions .admissionsContent .admissionsItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#main .admissions .admissionsContent .admissionsItem .admissionsImage {
+  width: 60%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-right: 20px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  border: 1px solid #000;
+}
+
+#main .admissions .admissionsContent .admissionsItem .admissionsImageCreated {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)));
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8));
+  width: 100%;
+  height: 100%;
+  position: relative;
+  border: none !important;
+}
+
+#main .admissions .admissionsContent .admissionsItem .admissionsImageCreated a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+
+#main .admissions .admissionsContent .admissionsItem .imageUndergraduate {
+  background-image: url(../images/admissions.jpg);
+}
+
+#main .admissions .admissionsContent .admissionsItem .imagePostgraduate {
+  background-image: url(../images/tuyen_sinh.jpg);
+  background-position: left;
+}
+
+#main .admissions .admissionsContent .admissionsItem .admissionsInfo {
+  width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main .admissions .admissionsContent .admissionsItem .admissionsInfo a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Lobster", cursive;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#main .admissions .admissionsContent .admissionsItem .admissionsInfo a h3 {
+  font-size: 35px;
+}
+
+#main .admissions .admissionsContent .admissionsItem .admissionsInfo a:hover {
+  color: #494848;
+}
+
+#main .admissions .admissionsContent .admissionsItem .admissionsInfo p {
+  font-size: 14px;
+}
+
+#main .studentActive .mainStudentActive {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+      grid-template-areas: 'item1 item1 item2 item2' 'item1 item1 item3 item4';
+}
+
+#main .studentActive .mainStudentActive .studentActiveItem {
+  min-height: 200px;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+#main .studentActive .mainStudentActive .studentActiveItem .studentActiveInfo {
+  position: absolute;
+  bottom: 4px;
+  font-size: 14px;
+  color: #fff;
+}
+
+#main .studentActive .mainStudentActive .studentActiveItem .studentActiveInfo .infoTitle {
+  padding: 5px;
+  background: #000;
+  display: inline-block;
+  font-size: 17px;
+  font-family: "Lobster", cursive;
+}
+
+#main .studentActive .mainStudentActive .studentActiveItem .studentActiveInfo .infoLink {
+  background: #9c1607;
+  padding: 5px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#main .studentActive .mainStudentActive .studentActiveItem .studentActiveInfo .infoLink:hover {
+  color: #cfcfcf;
+}
+
+#main .studentActive .mainStudentActive .item1 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: item1;
+  background-image: url(../images/sv-new3.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#main .studentActive .mainStudentActive .item2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: item2;
+  background-image: url(../images/dh-van-hoa-15662028042451030603518-crop-1566202817767835369529.jpg);
+}
+
+#main .studentActive .mainStudentActive .item3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: item3;
+  background-image: url(../images/sv-new4.jpg);
+}
+
+#main .studentActive .mainStudentActive .item4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: item4;
+  background-image: url(../images/ngam-nhin-ve-dep-nu-sinh-dai-hoc-van-hoa-trong-ta-ao-dai10.jpg);
+  background-position: top;
+}
+
+#footer {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+#footer .footerContact {
+  width: 100%;
+  background: #111;
+  height: 50vh;
+  z-index: -1;
+}
+
+#footer .footerContact .wrapper {
+  height: 50vh;
+}
+
+#footer .footerContact .wrapper .topWrapper {
+  margin: 0 auto;
+  vertical-align: middle;
+}
+
+#footer .footerContact .wrapper .topWrapper .contact {
+  width: 40%;
+}
+
+#footer .footerContact .wrapper .topWrapper .contact .imageContact {
+  width: 80px;
+  height: 80px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#footer .footerContact .wrapper .topWrapper .contact .infoContact {
+  margin-top: 10px;
+  line-height: 40px;
+  font-weight: lighter;
+  font-size: 15px;
+  font-style: italic;
+}
+
+#footer .footerContact .wrapper .topWrapper .contact .infoContact i {
+  margin-right: 10px;
+}
+
+#footer .footerContact .wrapper .topWrapper .contact .iconsContact {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#footer .footerContact .wrapper .topWrapper .contact .iconsContact a i {
+  margin-right: 20px;
+}
+
+#footer .footerContact .wrapper .topWrapper .contact .iconsContact a i:hover {
+  color: #e74c3c;
+}
+
+#footer .footerContact .wrapper .topWrapper .listLink {
+  width: 100%;
+  padding: 0;
+}
+
+#footer .footerContact .wrapper .topWrapper .listLink .listItem .headerList {
+  font-size: 25px;
+  font-family: "Lobster", cursive;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#footer .footerContact .wrapper .topWrapper .listLink .listItem .headerList:hover {
+  color: #e74c3c;
+}
+
+#footer .footerContact .wrapper .topWrapper .listLink .listItem .bodyList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  line-height: 40px;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+#footer .footerContact .wrapper .topWrapper .listLink .listItem .bodyList a:hover {
+  color: #cfcfcf;
+}
+
+#footer .footerContact .bottomWrapper {
+  margin: auto;
+}
+
+#footer .footerContact .bottomWrapper .copyRight {
+  margin-top: 30px;
+  color: #cfcfcf;
+  font-style: italic;
+  font-weight: lighter;
+  font-size: 14px;
+}
+
+#footer .footerBanner {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, rgba(0, 0, 0, 0.1)), color-stop(80%, rgba(255, 255, 255, 0.2)), to(rgba(0, 0, 0, 0.6))), url(../images/banner2.png);
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 10%, rgba(255, 255, 255, 0.2) 80%, rgba(0, 0, 0, 0.6)), url(../images/banner2.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: top;
+  background-size: cover;
+  height: 50vh;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

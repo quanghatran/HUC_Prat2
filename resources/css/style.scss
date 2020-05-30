@@ -1,0 +1,689 @@
+@import "button";
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(44, 62, 80);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes runDown {
+  0% {
+    bottom: 15px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 15px;
+  }
+}
+
+#header {
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.1) 10%,
+    rgba(255, 255, 255, 0.2) 80%,
+    rgba(0, 0, 0, 0.6)
+  ),
+  url(../images/59435b9c51693-12036669102050020904398813134497801575965934n.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+
+  .headerWrapper {
+    margin: auto;
+    position: relative;
+    height: 100vh;
+    .topHeader {
+      z-index: 3;
+      color: #fff;
+      height: 80px;
+      .logo {
+        width: 80px;
+        cursor: pointer;
+      }
+
+      .menu {
+        .listMenu {
+          li {
+            line-height: 80px;
+            font-weight: 500;
+            font-size: 20px;
+          
+            a {
+              margin: 15px 25px;
+              cursor: pointer;
+              text-shadow: 2px 2px 3px #000;
+              font-family: "Lobster", cursive;
+              position: relative;
+            }
+
+
+            a:hover,
+            a:active {
+              color: #bd3829;
+              
+            }
+            
+            a:hover::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 3px;
+              background-color: #bd3829;
+              top: 110%;
+              left: 50%;
+              transform: translate(-50%);
+            }
+            a:active::after {
+              content: "";
+              position: absolute;
+              width: 100%;
+              height: 3px;
+              background-color: #bd3829;
+              top: 110%;
+              left: 50%;
+              transform: translate(-50%);
+            }
+          }
+        }
+      }
+
+      .language {
+        li {
+          line-height: 80px;
+          width: 35px;
+          a {
+            cursor: pointer;
+          }
+          a:hover {
+            color: #9c1607;
+          }
+        }
+      }
+    }
+
+    .slideShow {
+      height: 40%;
+      top: 250px;
+      z-index: 1;
+      left: 0;
+      font-family: "Lobster", cursive;
+      color: #fff;
+      text-shadow: 2px 2px 3px #000;
+      // overflow: hidden;
+      .firstLine {
+        // animation: animate animate__backInDown;
+        font-size: 60px;
+        margin-bottom: 20px;
+      }
+      .secondLine {
+        margin-bottom: 20px;
+        animation-delay: 0.5s;
+        font-size: 30px;
+      }
+
+    }
+
+    .boxes {
+      color: #fff;
+      // bottom: 100px;
+      margin-bottom: 100px;
+      width: 100%;
+      .box {
+        display: flex;
+        flex-direction: row;
+        width: 250px;
+        height: 100px;
+        text-align: center;
+        align-items: center;
+        vertical-align: middle;
+        transition: all 0.4s;
+        background: linear-gradient(
+          to right,
+          rgba(0, 0, 0, 0.2),
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.2)
+        );
+        justify-content: space-around;
+        img {
+          // width: 20%;
+          transition: all 0.3s;
+          height: 50px;
+        }
+        .content {
+          h3 {
+            font-size: 25px;
+            letter-spacing: 1px;
+            font-family: "Lobster", cursive;
+            margin-bottom: 10px;
+          }
+          .viewMore {
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.4s;
+            i {
+              font-size: 11px;
+            }
+          }
+          .viewMore:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+      .box:hover {
+        background: rgba(0, 0, 0, 0.7);
+        img {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .down {
+      color: #fff;
+      font-size: 35px;
+      // bottom: 20px;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+      animation-delay: 1s;
+      animation: runDown 1s infinite;
+    }
+  }
+}
+
+#main {
+
+  // main box
+  .mainBox {
+    margin: auto;
+    .titleMainBox {
+      font-family: "Lobster", cursive;
+      font-size: 40px;
+      color: #bd3829;
+      margin: 50px auto;
+      position: relative;
+      margin-bottom: 70px;
+    }
+    .titleMainBox::after {
+      content: "";
+      position: absolute;
+      width: 20%;
+      height: 3px;
+      background-color: #bd3829;
+      top: 115%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+    .titleMainBox::before {
+      content: "";
+      position: absolute;
+      width: 10%;
+      height: 3px;
+      background-color: #bd3829;
+      top: 135%;
+      left: 50%;
+      transform: translate(-50%);
+    }
+  }
+
+  // newsletter
+  .newsletter {
+    .newsletterContent {
+      min-height: 400px;
+      display: flex;
+      flex-direction: row;
+      .leftContent {
+        width: 65%;
+        height: max-content;
+        .contentImage {
+          width: 100%;
+          height: 70%;
+          height: 390px;
+          background-image: url(../images/diem-trung-tuyen-dai-hoc-van-hoa-ha-noi-thap-nhat-la-15-223552.jpg);
+          background-size: cover;
+          background-position: center;
+        }
+        .contentText {
+          margin: 30px auto;
+          .titleText {
+            font-size: 20px;
+            color: #000;
+            text-decoration: none;
+            line-height: 30px;
+          }
+          .leftParagraph {
+            font-size: 14px;
+            font-weight: lighter;
+            word-spacing: 1px;
+            line-height: 23px;
+
+          }
+
+          .titleText:hover {
+            color: rgb(73, 72, 72);
+          }
+          .subText {
+            // float: right;
+            font-size: 13px;
+            color: rgb(73, 72, 72);
+            font-weight: lighter;
+            margin-top: 10px;
+            line-height: 23px;
+            margin-bottom: 30px;
+
+            i {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+      .rightContent {
+        width: 35%;
+        height: 100%;
+        .rightContentItem {
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          padding-bottom: 25px;
+          .contentImage {
+            width: 50%;
+            margin-right: 20px;
+            background-position: center;
+            background-size: cover;
+          }
+          .contentText {
+            width: 50%;
+            .titleText {
+              font-size: 15px;
+              color: #000;
+              text-decoration: none;
+            }
+            .titleText:hover {
+              color: rgb(73, 72, 72);
+            }
+            .subText {
+              // float: right;
+              font-size: 13px;
+              color: rgb(73, 72, 72);
+              font-weight: lighter;
+              margin-top: 10px;
+              line-height: 23px;
+
+              i {
+                margin-right: 10px;
+              }
+            }
+          }
+        }
+
+        .item1 {
+          .contentImage {
+            background-position: top;
+            background-image: url(../images/ngam-nhin-ve-dep-nu-sinh-dai-hoc-van-hoa-trong-ta-ao-dai2.jpg);
+          }
+        }
+
+        .item2 {
+          .contentImage {
+            background-image: url(../images/vov_123_zidm.jpg);
+          }
+        }
+
+        .item3 {
+          .contentImage {
+            background-image: url(../images/new4.jpg);
+          }
+        }
+
+        .item4 {
+          .contentImage {
+            background-image: url(../images/new3.jpg);
+          }
+        }
+      }
+    }
+  }
+
+  // events
+  .events {
+    
+    .eventsContent {
+      .listEvent {
+        width: 65%;
+        margin: auto;
+
+        ul {
+          margin: 0;
+          padding: 0;
+          li {
+            cursor: pointer;
+            a {
+              text-decoration: none;
+              font-family: "Lobster", cursive;
+              color: #000;
+              font-size: 20px;
+            }
+            a:hover {
+              color: #e74c3c;
+            }
+          }
+        }
+      }
+      .boxsEvent {
+        width: 100%;
+        .box {
+          width: 30%;
+          margin-bottom: 30px;
+          // height: 300px;
+          .boxImage {
+            width: 100%;
+            height: 170px;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(95%);
+            cursor: pointer;
+          }
+          .boxImage:hover {
+            filter: brightness(110%);
+          }
+
+          .boxInfo {
+            .boxSub {
+              font-size: 13px;
+              color: rgb(73, 72, 72);
+
+            }
+            .boxTitle {
+              h3 {
+                font-size: 18px;
+                font-family: "Lobster", cursive;
+                cursor: pointer;
+              }
+              h3:hover {
+                color: rgb(101, 101, 101);
+
+              }
+            }
+          }
+          .boxImage1 {
+            background-image: url(../images/81688010_2643701725744766_3201397502074945536_o.jpg);
+          }
+          .boxImage2 {
+            background-image: url(../images/73475169_2551826618265611_1184934292455686144_o.jpg);
+          }
+          .boxImage3 {
+            background-image: url(../images/73206241_2529139677200972_1286322587525185536_o.jpg);
+          }
+          .boxImage4 {
+            background-image: url(../images/ngam-nhin-ve-dep-nu-sinh-dai-hoc-van-hoa-trong-ta-ao-dai2.jpg);
+            background-position: top;
+          }
+          .boxImage5 {
+            background-image: url(../images/59435b9c51693-12036669102050020904398813134497801575965934n.jpg);
+          }
+          .boxImage6 {
+            background-image: url(../images/new4.jpg);
+          }
+
+        }
+      }
+    }
+  }
+
+
+  // admissions
+  .admissions {
+    .admissionsContent {
+      text-align: justify;
+      max-height: 400px;
+      .admissionsItem {
+        display: flex;
+        flex-direction: row;
+        .admissionsImage {
+          width: 60%;
+          background-size: cover;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-right: 20px;
+          transition: all .4s;
+          border: 1px solid #000;
+        }
+        .admissionsImageCreated {
+          background-image: linear-gradient(rgba(0, 0, 0, .8));
+          width: 100%;
+          height: 100%; 
+          position: relative;
+          border: none !important;
+          a {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 10px;
+          }
+
+        }
+        .imageUndergraduate {
+          background-image: url(../images/admissions.jpg);
+        }
+        .imagePostgraduate {
+          background-image: url(../images/tuyen_sinh.jpg);
+          background-position: left;
+        }
+        .admissionsInfo {
+          width: 40%;
+          display: flex;
+          flex-direction: column;
+          a {
+            text-decoration: none;
+            color: #000;
+            font-family: "Lobster", cursive;
+            text-align: center;
+            margin-bottom: 20px;
+            h3 {
+              font-size: 35px;
+            }
+          }
+          a:hover {
+            color: rgb(73, 72, 72);
+          }
+          p {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  // student active
+  .studentActive {
+    .mainStudentActive {
+      display: grid;
+      grid-gap: 10px;
+      grid-template-areas:
+      'item1 item1 item2 item2'
+      'item1 item1 item3 item4' ;
+      .studentActiveItem {
+        // width: 300px;
+        // height: 200px;
+        min-height: 200px;
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        .studentActiveInfo {
+          position: absolute;
+          bottom: 4px;
+          font-size: 14px;
+          color: #fff;
+          .infoTitle {
+            padding: 5px;
+            background: #000;
+            display: inline-block;
+            font-size: 17px;
+            font-family: "Lobster", cursive;
+
+          }
+          .infoLink {
+            background: #9c1607;
+            padding: 5px;
+            width: 100%;
+            overflow: hidden;
+          }
+          .infoLink:hover {
+            color: rgb(207, 207, 207);
+          }
+        }
+
+
+        
+      }
+      .item1 {
+        grid-area: item1;
+        background-image: url(../images/sv-new3.jpg);
+        background-size: cover;
+        background-position: center;
+
+      }
+      .item2 {
+        grid-area: item2;
+        background-image: url(../images/dh-van-hoa-15662028042451030603518-crop-1566202817767835369529.jpg);
+        // height: 100%;
+      }
+      .item3 {
+        grid-area: item3;
+        background-image: url(../images/sv-new4.jpg);
+
+      }
+      .item4 {
+        grid-area: item4;
+        background-image: url(../images/ngam-nhin-ve-dep-nu-sinh-dai-hoc-van-hoa-trong-ta-ao-dai10.jpg);
+        background-position: top;
+
+      }
+    }
+  }
+}
+
+// footer
+#footer {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  .footerContact {
+    width: 100%;
+    background: #111;
+    height: 50vh;
+    z-index: -1;
+    .wrapper {
+      height: 50vh;
+      .topWrapper {
+        margin:0 auto;
+        vertical-align: middle;
+        .contact {
+          width: 40%;
+          .imageContact {
+            width: 80px;
+            height: 80px;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          .infoContact {
+            margin-top: 10px;
+            line-height: 40px;
+            font-weight: lighter;
+            font-size: 15px;
+            font-style: italic;
+            i {
+              margin-right: 10px;
+            }
+          }
+          .iconsContact {
+            font-size: 20px;
+            margin-top: 10px;
+            a {
+              // width: 40px;
+              // height: 40px;
+              // border-radius: 50%;
+              // border: 1px solid #fff;
+              // margin: auto;
+      
+              i {
+                margin-right: 20px;
+              }
+              i:hover {
+                color: #e74c3c;
+              }
+            }
+          }
+        }
+  
+        .listLink {
+          width: 100%;
+          padding: 0;
+          .listItem {
+            // vertical-align: middle;
+            .headerList {
+              font-size: 25px;
+              font-family: "Lobster", cursive;
+              margin-bottom: 20px;
+              letter-spacing: 1px;
+              cursor: pointer;
+            }
+            .headerList:hover {
+              color: #e74c3c;
+            }
+            .bodyList {
+              display: flex;
+              flex-direction: column;
+              line-height: 40px;
+              font-weight: lighter;
+              font-size: 15px;
+              a:hover {
+                color: rgb(207, 207, 207);
+              }
+            }
+       
+          }
+        }
+  
+      }
+    }
+    .bottomWrapper {
+      margin: auto;
+      .copyRight {
+        margin-top: 30px;
+        color: rgb(207, 207, 207);
+        font-style: italic;
+        font-weight: lighter;
+        font-size: 14px;
+      }
+    }
+  }
+
+  .footerBanner {
+    background-image:  linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.1) 10%,
+      rgba(255, 255, 255, 0.2) 80%,
+      rgba(0, 0, 0, 0.6)
+    ), url(../images/banner2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: cover;
+    height: 50vh;
+    width: 100%;
+  }
+  
+}
